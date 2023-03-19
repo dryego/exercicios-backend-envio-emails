@@ -1,8 +1,8 @@
 const express = require('express');
-const { login } = require('./controlador/login');
+const { cadastrousuario } = require('./controlador/cadastro');
 
 const rotas = express.Router();
 
-rotas.get('/', login);
+rotas.post('/', cadastrousuario);
 
 module.exports = { rotas };
